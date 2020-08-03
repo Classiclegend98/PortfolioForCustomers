@@ -29,7 +29,7 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     padding: 1rem 1rem;
 
     background: rgba(lighten($primary-color, 2), 0.5);
@@ -58,6 +58,7 @@ main {
   .icons {
     margin-top: 1rem;
     display: flex;
+    flex-direction: row-reverse;
 
     a {
       padding: 1.5rem;

@@ -41,11 +41,15 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.8;
   visibility: hidden;
 
   &.show {
     visibility: visible;
+  }
+
+  a:hover {
+    color: $secondary-color;
+    @include easeOut;
   }
 
   &-branding,
@@ -84,5 +88,24 @@
       //Slide in from the bottom
       transform: translate3d(0, 0, 0);
     }
+
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+      background-size: cover;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 550;
+    @include easeOut;
   }
 }
